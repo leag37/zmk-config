@@ -250,11 +250,11 @@
                 };
 	};
 
-//	conditional_layers {
-//		compatible = "zmk,conditional-layers";
-//		sys_layer {
-//			if-layers = <FUN MEDIA>;
-//			then-layer = <SYS>;
-//		};
-//	};
+	conditional_layers {
+		compatible = "zmk,conditional-layers";
+		sys_layer {
+			if-layers = <FUN MEDIA>;
+			then-layer = <SYS>;
+		};
+	};
 };
