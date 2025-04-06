@@ -254,7 +254,7 @@
 
 	conditional_layers {
 		compatible = "zmk,conditional-layers";
-		sys_layer = {
+		sys_layer {
 			if-layers = <FUN MEDIA>;
 			then-layer = <SYS>;
 		};
