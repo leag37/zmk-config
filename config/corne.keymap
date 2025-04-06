@@ -110,6 +110,20 @@
 				<&macro_tap &kp LCTRL &kp C>;
 		};
 	};
+	
+	combos {
+		compatible = "zmk,combos";
+		combo_lpar {
+			//timeout-ms = <50>;
+			key-positions = <RM1 RM2>;
+			bindings = <&kp LPAR>;
+		};
+		combo_rpar {
+			//timeout-ms = <50>;
+			key-positions = <RM2 RM3>;
+			bindings = <&kp RPAR>;
+		};
+	};
 
         keymap {
                 compatible = "zmk,keymap";
