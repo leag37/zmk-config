@@ -172,6 +172,13 @@
 			bindings = <&kp COLON>;
 			layers = <BASE NUM SYM>;
 		};
+		combo_tilde {
+			//timeout-ms = <50>;
+			require-prior-idle-ms = <PREFERRED_PRIOR_IDLE_TIME>;
+			key-positions = <1 2>; //<TR4 TR3>;
+			bindings = <&kp TILDE>;
+			layers = <BASE NUM SYM>;
+		};
 		combo_amps {
 			//timeout-ms = <50>;
 			require-prior-idle-ms = <PREFERRED_PRIOR_IDLE_TIME>;
