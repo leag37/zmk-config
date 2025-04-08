@@ -57,7 +57,17 @@
 		};
 
 		// mod tap & layer tap
-		
+	    glt: gael_layer_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            require-prior-idle-ms = <PREFERRED_PRIOR_IDLE_TIME>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            bindings = <&mo>, <&kp>;
+            display-name = "Layer-Tap";
+        };
+
 		// mod morphs
 		comsem: comma_semicolon {
 			compatible = "zmk,behavior-mod-morph";
@@ -252,7 +262,7 @@
 // |---------------+---------------+---------------+---------------+---------------+---------------|   |---------------+---------------+---------------+---------------+---------------+---------------|
 	&kp LT		&kp Z		&kp X		&kp C		&kp V		&kp B		     &kp N	     &kp M          &comsem         &dotcol          &upipe          &kp GT
 // |---------------+---------------+---------------+---------------+---------------+---------------|   |---------------+---------------+---------------+---------------+---------------+---------------|
-						     &lt MEDIA TAB   &lt NAV ESC    &lt MOUSE SPACE	  &lt SYM RET	 &lt NUM BSPC	 &lt FUN DEL	 
+						     &glt MEDIA TAB   &glt NAV ESC    &glt MOUSE SPACE	  &glt SYM RET	 &glt NUM BSPC	 &glt FUN DEL	 
 // 						   |---------------+---------------+---------------|   |---------------+---------------+---------------|
 			>;
                 };
