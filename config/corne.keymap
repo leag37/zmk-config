@@ -61,7 +61,7 @@
 			compatible = "zmk,behavior-hold-tap";
 			#binding-cells = <2>;
 			flavor = "balanced";
-			require-prior-idle-ms = <60>;
+			require-prior-idle-ms = <80>;
 			tapping-term-ms = <100>;
 			quick-tap-ms = <100>;
 			bindings = <&kp>, <&kp>;
@@ -72,7 +72,7 @@
 			compatible = "zmk,behavior-hold-tap";
 			#binding-cells = <2>;
 			flavor = "balanced";
-			require-prior-idle-ms = <60>;
+			require-prior-idle-ms = <80>;
 			tapping-term-ms = <100>;
 			quick-tap-ms = <100>;
 			bindings = <&kp>, <&kp>;
@@ -319,7 +319,7 @@
 // |---------------+---------------+---------------+---------------+---------------+---------------|   |---------------+---------------+---------------+---------------+---------------+---------------|
         &kp LBRC         &kp Q		&kp W		&kp F		&kp P		&kp B		     &kp J	     &kp L          &kp U      	     &kp Y           &kp SQT          &kp RBRC
 // |---------------+---------------+---------------+---------------+---------------+---------------|   |---------------+---------------+---------------+---------------+---------------+---------------|
-	&lparbkt      &hmtl LGUI A      &hml LALT R     &hml LCTRL R   &hmsl LSHFT T	&kp G		     &kp M	  &hmsr RSHFT N	  &hmr RCTRL E	  &hmr RALT I	  &hmr RGUI O     &rparbkt
+	&lparbkt      &hmtl LGUI A      &hml LALT R     &hml LCTRL S   &hmsl LSHFT T	&kp G		     &kp M	  &hmsr RSHFT N	  &hmr RCTRL E	  &hmr RALT I	  &hmr RGUI O     &rparbkt
 // |---------------+---------------+---------------+---------------+---------------+---------------|   |---------------+---------------+---------------+---------------+---------------+---------------|
 	&kp LT		&kp Z		&kp X		&kp C		&kp D		&kp V		     &kp K	     &kp H          &comsem         &dotcol          &upipe          &kp GT
 // |---------------+---------------+---------------+---------------+---------------+---------------|   |---------------+---------------+---------------+---------------+---------------+---------------|
