@@ -79,27 +79,28 @@
 			hold-trigger-key-positions = <KEYS_L THUMBS>;
 			hold-trigger-on-release;
 		};
+
 		hmtl: homerow_mods_tap_left { 
 			compatible = "zmk,behavior-hold-tap";
 			#binding-cells = <2>;
-			flavor = "tap-preferred";
-			require-prior-idle-ms = <150>;
+			flavor = "balanced";
+			require-prior-idle-ms = <PREFERRED_PRIOR_IDLE_TIME>;
 			tapping-term-ms = <175>;
 			quick-tap-ms = <175>;
 			bindings = <&kp>, <&kp>;
-			hold-trigger-key-positions = <KEYS_R THUMBS>;
-			hold-trigger-on-release;
+			hold-trigger-key-positions = <THUMBS>; // only listen for thumb keys for gui, we rarely want to trigger gui unless it's part of a bespoke combo
+			//hold-trigger-on-release; // disable hold trigger on release for full-term hrms, as we really only care about full term holds
 		};
 		hmtr: homerow_mods_tap_right { 
 			compatible = "zmk,behavior-hold-tap";
 			#binding-cells = <2>;
-			flavor = "tap-preferred";
-			require-prior-idle-ms = <150>;
+			flavor = "balanced";
+			require-prior-idle-ms = <PREFERRED_PRIOR_IDLE_TIME>;
 			tapping-term-ms = <175>;
 			quick-tap-ms = <175>;
 			bindings = <&kp>, <&kp>;
-			hold-trigger-key-positions = <KEYS_L THUMBS>;
-			hold-trigger-on-release;
+			hold-trigger-key-positions = <THUMBS>;
+			//hold-trigger-on-release;
 		};
 
 		// mod tap & layer tap
