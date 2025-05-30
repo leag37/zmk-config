@@ -87,7 +87,7 @@
 			tapping-term-ms = <250>;
 			quick-tap-ms = <250>;
 			bindings = <&kp>, <&kp>;
-			hold-trigger-key-positions = <KEYS_R THUMBS>;
+			hold-trigger-key-positions = <KEYS_L KEYS_R THUMBS>;
 			hold-trigger-on-release;
 		};
 		hmtr: homerow_mods_tap_right { 
@@ -98,7 +98,7 @@
 			tapping-term-ms = <250>;
 			quick-tap-ms = <250>;
 			bindings = <&kp>, <&kp>;
-			hold-trigger-key-positions = <KEYS_L THUMBS>;
+			hold-trigger-key-positions = <KEYS_L KEYS_R THUMBS>;
 			hold-trigger-on-release;
 		};
 
